@@ -24,7 +24,7 @@ FROM alpine AS release
 
 WORKDIR /usr/src/app/
 
-COPY COPY src/product-catalog/products/ ./products/
+COPY src/product-catalog/products/ ./products/
 
 COPY --from=builder /usr/src/app/product-catalog/ ./
 
